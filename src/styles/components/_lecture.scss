@@ -1,0 +1,85 @@
+.lecture-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.lecture {
+  width: 80%;
+  margin: 30px auto 0;
+  flex: 1;
+}
+
+.lecture-input {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto 20px;
+}
+
+.lecture-input-first {
+  display: grid;
+  grid-template-columns: 80% auto;
+  margin-bottom: 10px;
+}
+
+.lecture-input-first input {
+  border: 2px solid $dark-grey;
+  border-radius: 10px;
+  font-size: $font-size-xlarge;
+  width: 100%;
+}
+
+.lecture-input-first input:first-child {
+  margin-bottom: 10px;
+}
+
+.lecture-input-des {
+  width: 100%;
+  border: 2px solid $dark-grey;
+  font-size: $font-size-xlarge;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.lecture-btn {
+  width: 80%;
+  border: none;
+}
+
+.lecture-btn:hover {
+  background-color: $medium-blue;
+  border: none;
+}
+
+.table-lecture > * {
+  @extend .table-title-lecture;
+}
+
+.table-title-lecture {
+  display: grid;
+  text-align: center;
+  grid-gap: 10px;
+  grid-template-columns: 25% 20% 15% 15% auto;
+}
+
+.lecture-myvideo {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.table-title-lecture > input {
+  text-align: center;
+  font-family: $font-btn;
+  font-size: $font-size-large;
+}
+
+.lecture-des {
+  text-align: left;
+  font-family: $font-btn;
+  font-size: $font-size-large;
+}
+
+.lecture-des {
+  width: 100%;
+}

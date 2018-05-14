@@ -1,0 +1,46 @@
+.not-found-container {
+  display: flex;
+  background: $black;
+  height: 100vh;
+  align-items: center;
+}
+
+.not-found {
+  width: 70%;
+  display: flex;
+  color: $off-white;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.not-found-content * {
+  font-family: $font-subtitle;
+  font-size: $font-size-xxlarge;
+  line-height: $font-size-xxxxlarge;
+}
+
+.not-found-content div > * {
+  text-decoration: underline;
+  color: $medium-blue;
+}
+
+.not-found-content div > *:hover {
+  cursor: pointer;
+  color: $off-white;
+}
+
+.not-found-nopage {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-family: $font-title;
+  font-size: $font-size-xxxlarge;
+}

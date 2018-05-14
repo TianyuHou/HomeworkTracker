@@ -1,0 +1,10 @@
+.error-message {
+  color: $red;
+  background-color: $light-red;
+  margin: 10px 0;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-family: $font-subtitle;
+  font-size: $font-size-large;
+}

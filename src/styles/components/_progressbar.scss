@@ -1,0 +1,19 @@
+.progress {
+  width: 80%;
+  background-color: $light-grey;
+  border-radius: 10px;
+  font-family: $font-subtitle;
+  font-size: $font-size-small;
+  margin-bottom: 10px;
+}
+
+#progress-bar {
+  border-radius: 10px;
+  width: 10%;
+  height: 20px;
+  background-color: $blue-green;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  box-shadow: 3px 3px 10px $black;
+}

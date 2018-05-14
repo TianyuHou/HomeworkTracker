@@ -1,0 +1,164 @@
+.login-window {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  // overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.error-login {
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 20px;
+  width: 40%;
+  margin-bottom: 20px;
+  // margin: 0 auto;
+}
+
+/* Modal Content */
+.window-content {
+  position: relative;
+  display: flex;
+  border-radius: 10%;
+  flex-direction: column;
+  overflow: auto;
+  margin: auto;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  font-size: $font-size-xxxlarge;
+  font-weight: normal;
+}
+
+.close:hover,
+.close:focus {
+  color: $dark-grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.window-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 5px;
+  margin: 0;
+  background-color: $dark-blue;
+  color: white;
+  font-family: $font-title;
+  font-size: $font-size-large;
+}
+
+.window-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  background-color: $off-white;
+}
+
+.window-body-item {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 30% auto;
+  grid-column-gap: 10px;
+  text-align: left;
+  margin: 10px auto;
+  font-family: $font-subtitle;
+  font-size: $font-size-medium;
+}
+
+.window-body-item input {
+  border-bottom: 2px solid $light-grey;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.window-footer {
+  padding: 2px 16px;
+  display: flex;
+  justify-content: center;
+  background-color: $off-white;
+  color: white;
+}
+
+.window-footer > button {
+  background-color: $dark-blue;
+  height: 50px;
+  width: 50%;
+  border: none;
+  font-size: $font-size-large;
+  font-family: $font-subtitle;
+  padding: 20px auto;
+  margin-bottom: 10%;
+  text-transform: uppercase;
+  color: $off-white;
+}
+
+.window-footer > button:hover {
+  cursor: pointer;
+  background-color: $medium-blue;
+}
+
+.pay-window-content {
+  width: 60%;
+  border-radius: 30px;
+}
+
+.pay-window-header {
+  flex-direction: column;
+}
+
+.pay-window-header > div {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+}
+
+.pay-window-header > h4 {
+  font-size: $font-size-medium;
+  font-family: $font-content;
+  color: $light-red;
+  margin: 5px 0;
+}
+
+.pay-window-footer > button {
+  margin-bottom: 10px;
+}

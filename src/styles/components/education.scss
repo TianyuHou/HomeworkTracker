@@ -1,0 +1,96 @@
+.education-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.education {
+    width: 80%;
+    margin: 20px auto 20px;
+    flex: 1;
+}
+
+.education-frame {
+    display: grid;
+    grid-template-columns: 70% auto;
+    margin: 20px auto;
+}
+
+.education-content {
+    flex-basis: 65%;
+    height: 100%;
+}
+
+.education-list {
+    margin-left: 30px;
+    flex: 1;
+}
+
+.video {
+    width: 100%;
+    height: 350px;
+}
+
+.video-first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-title {
+    font-family: $font-subtitle;
+    font-size: $font-size-xlarge;
+}
+
+.video-time {
+    font-family: $font-content;
+    font-size: $font-size-small;
+}
+
+.video-des {
+    font-family: $font-content;
+    font-size: $font-size-medium;
+}
+
+.mentor-profile {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $dark-blue;
+    box-shadow: 5px 5px 5px;
+}
+
+.mentor-intro>p {
+    text-align: right;
+    font-weight: bold;
+}
+
+.mentor-profile>img {
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    margin-left: 10px;
+}
+
+.lecture-container {
+    margin-top: 20px;
+}
+
+.table-lecture>a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-small-lecture {
+    width: 100%;
+    display: flex;
+    padding: 5px !important;
+    justify-content: space-between;
+}
+
+.table-small-lecture .read-icon {
+    margin: 0;
+}
+
+.table-small-lecture .delete-icon {
+    margin: 0;
+}

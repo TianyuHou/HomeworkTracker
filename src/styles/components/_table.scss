@@ -1,0 +1,49 @@
+.table-container {
+  box-shadow: 6px 6px 20px #000000;
+  margin-bottom: 20px;
+}
+
+.table-title {
+  display: grid;
+  padding: 5px 30px;
+  background-color: $dark-grey;
+  font-family: $font-subtitle;
+
+  color: $off-white;
+}
+
+.table-content a {
+  font-family: $font-btn;
+  font-size: $font-size-large;
+}
+
+.table-content > * {
+  padding: 5px 30px;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  transition: transform 0.2s ease-in-out;
+}
+
+.table-content > *:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 5px;
+}
+
+.avator {
+  display: flex;
+  align-items: center;
+}
+
+.avator > img {
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+  margin-right: 10px;
+}
+
+.collapsible-content {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 60px;
+}

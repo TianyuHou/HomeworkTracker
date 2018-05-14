@@ -1,0 +1,72 @@
+.header {
+  background: url('/images/F2Ewhite.png') no-repeat;
+  background-size: contain;
+  background-position: 7%;
+  background-color: $black;
+  color: $off-white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px 0;
+}
+.header-container > * {
+  color: $off-white;
+}
+
+.f2e-logo-white {
+  width: 10%;
+  height: 10%;
+}
+
+.header-logout {
+  display: flex;
+  font-family: $font-title;
+  font-size: $font-size-large;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.header-logout > * {
+  margin-left: 20px;
+  text-align: right;
+  color: $off-white;
+}
+
+.nav-bar {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.nav-icon {
+  color: $off-white;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-title;
+  font-size: $font-size-large;
+  text-transform: uppercase;
+  flex: 1;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.2s ease-in-out;
+}
+.nav-icon:hover,
+.nav-icon:active,
+.nav-icon:focus {
+  background-color: $off-white;
+  color: $black;
+}
+.nav-icon > * {
+  font-size: $font-size-xxlarge;
+}
+.nav-icon > h3 {
+  font-size: $font-size-medium;
+}
+
+.logout-btn:hover {
+  color: $off-white;
+  cursor: pointer;
+}

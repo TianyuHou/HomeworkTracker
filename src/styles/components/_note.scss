@@ -1,0 +1,100 @@
+.note-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.note {
+  width: 80%;
+  margin: 30px auto 0;
+  flex: 1;
+}
+
+.note-input {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto 20px;
+}
+
+.note-input-first {
+  display: grid;
+  grid-template-columns: 80% auto;
+  // justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.note-input-first input {
+  border: 2px solid $dark-grey;
+  border-radius: 10px;
+  font-size: $font-size-xlarge;
+  width: 100%;
+}
+
+.note-input-des {
+  width: 100%;
+  border: 2px solid $dark-grey;
+  font-size: $font-size-xlarge;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.note-btn {
+  width: 80%;
+  border: none;
+}
+
+.note-btn:hover {
+  background-color: $medium-blue;
+  border: none;
+}
+
+.table-note > * {
+  @extend .table-title-note;
+}
+
+.table-title-note {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 20% 30% 20% auto;
+}
+
+.table-title-note > input {
+  text-align: center;
+  font-family: $font-btn;
+  font-size: $font-size-large;
+}
+
+.note-des {
+  text-align: left;
+  font-family: $font-btn;
+  font-size: $font-size-large;
+}
+
+.read-icon {
+  @extend .delete-icon;
+}
+
+.read-icon:hover {
+  cursor: pointer;
+  color: $medium-blue;
+}
+
+.delete-icon {
+  font-family: $font-btn;
+  font-size: $font-size-large;
+  margin: 0 auto;
+}
+
+.delete-icon > span:first-child {
+  margin-right: 15px;
+}
+
+.delete-icon > span:hover {
+  cursor: pointer;
+  color: $red;
+}
+
+.note-des {
+  width: 100%;
+}

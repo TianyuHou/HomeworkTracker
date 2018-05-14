@@ -1,0 +1,124 @@
+.financial-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.financial {
+    width: 80%;
+    margin: 20px auto 0;
+    flex: 1;
+}
+
+.table-financial>* {
+    @extend .table-title-financial;
+}
+
+.table-title-financial {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: 20% 15% 15% 10% 15% auto;
+}
+
+.table-donor-financial {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 40% 30% auto;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.search-btn {
+    margin-left: 20px;
+    color: $off-white;
+    text-align: center;
+    font-family: $font-btn;
+    font-size: $font-size-large;
+    background-color: $dark-blue;
+    border-radius: 15px;
+    width: 60px;
+    box-shadow: 3px 3px 5px $black;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px $black;
+}
+
+.request-form {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 30% 50% auto;
+    grid-gap: 20px;
+    font-family: $font-subtitle;
+    font-size: $font-size-large;
+}
+
+.request-form-des>input {
+    border: 2px solid $dark-grey;
+    border-radius: 10px;
+    font-size: $font-size-xlarge;
+    width: 100%;
+}
+
+.request-form-title>input {
+    border: 2px solid $dark-grey;
+    border-radius: 10px;
+    font-size: $font-size-xlarge;
+    width: 100%;
+}
+
+.request-form input {
+    border-bottom: 1px solid;
+}
+
+.request-money-btn {
+    @extend .search-btn;
+    width: 100%;
+    margin: 0;
+    border-radius: 20px;
+    background-color: $dark-blue;
+    border: none;
+}
+
+.request-money-btn:hover {
+    cursor: pointer;
+    background-color: $red;
+    box-shadow: 1px 1px 5px $black;
+}
+
+.request-money-des {
+    color: $green;
+}
+
+.paid-money-des {
+    color: $red;
+}
+
+.pay-btn {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid $dark-blue;
+    border-radius: 10px;
+}
+
+.pay-btn:hover {
+    background-color: $dark-blue;
+    color: $off-white;
+    cursor: pointer;
+}
+
+.student-paid-operation {
+    display: flex;
+    justify-content: center;
+}
+
+.student-paid-operation span {
+    margin-right: 10px;
+}
+
+.financial-des {
+    width: 100%;
+    font-family: $font-subtitle;
+}
